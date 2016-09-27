@@ -1,16 +1,18 @@
 package Classes.Book;
 
-public class Book {
+public class Book implements Comparable<Book> {
     private String title;
     private String author;
+    private String isbn;
     private int price;
     private static int edition;
 
-    public Book(String title, String author, int price, int edition) {
+    public Book(String title, String author, int price, int edition, String isbn) {
         this.title = title;
         this.author = author;
         this.price = price;
-        this.edition = edition;
+        Book.edition = edition;
+        this.isbn = isbn;
     }
 
     public String getTitle() {
@@ -31,6 +33,10 @@ public class Book {
 
     public void setPrice(int price) {
         this.price = price;
+    }
+
+    public String getIsbn() {
+        return isbn;
     }
 
     @Override
@@ -67,6 +73,11 @@ public class Book {
 
     @Override
     protected Object clone() {
-        return new Book(title, author, price, edition);
+        return new Book(title, author, price, edition, isbn);
+    }
+
+    @Override
+    public int compareTo(Book o) {
+        return this.getIsbn().compareTo(o.getIsbn());
     }
 }
