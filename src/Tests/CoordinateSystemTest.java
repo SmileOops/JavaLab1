@@ -13,13 +13,13 @@ public class CoordinateSystemTest {
     public void addPoint() throws Exception {
         CoordinateSystem coordinateSystem = new CoordinateSystem();
 
-        coordinateSystem.AddPoint(null);
+        coordinateSystem.addPoint(null);
     }
 
     @Test
     public void addCheckableRectangle() throws Exception {
         CoordinateSystem coordinateSystem = new CoordinateSystem();
 
-        coordinateSystem.AddCheckableRectangle(null);
+        coordinateSystem.addCheckableRectangle(null);
     }
 }

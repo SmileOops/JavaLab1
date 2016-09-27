@@ -11,7 +11,7 @@ public class CoordinateSystem {
 
     }
 
-    public void AddPoint(Point point) {
+    public void addPoint(Point point) {
         if (point != null) {
             points.add(point);
         }
@@ -21,7 +21,7 @@ public class CoordinateSystem {
 
     }
 
-    public void AddCheckableRectangle(CheckableRectangle checkableRectangle){
+    public void addCheckableRectangle(CheckableRectangle checkableRectangle){
         if (checkableRectangle != null) {
             checkableAreas.add(checkableRectangle);
         }
@@ -30,7 +30,7 @@ public class CoordinateSystem {
         }
     }
 
-    public void CheckPoints(){
+    public void checkPoints(){
         for (Point point: points) {
             boolean isInCheckableArea = false;
             for (CheckableRectangle rectangle: checkableAreas) {

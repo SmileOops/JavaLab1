@@ -44,8 +44,8 @@ public class ProgrammersBook extends Book{
 
     @Override
     public int hashCode() {
-        int result = language.hashCode();
-        result = 31 * result + level;
+        int result = super.hashCode() + language.hashCode() * 11;
+        result = result + level * 31;
         return result;
     }
 }

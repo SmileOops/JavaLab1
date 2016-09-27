@@ -9,7 +9,7 @@ public class CheckableRectangleTest {
 
 
     @Test
-    public void FirstQuarterTest() throws Exception {
+    public void firstQuarterTest() throws Exception {
         CheckableRectangle checkableRectangle = new CheckableRectangle(5, -2, -4, 4);
         boolean insidePointFlag = checkableRectangle.ContainsPoint(new Point(3, 2));
         boolean outsidePointFlag = checkableRectangle.ContainsPoint(new Point(6, 2));
@@ -19,7 +19,7 @@ public class CheckableRectangleTest {
     }
 
     @Test
-    public void SecondQuarterTest() throws Exception {
+    public void secondQuarterTest() throws Exception {
         CheckableRectangle checkableRectangle = new CheckableRectangle(5, -2, -4, 4);
         boolean insidePointFlag = checkableRectangle.ContainsPoint(new Point(-3, 2));
         boolean outsidePointFlag = checkableRectangle.ContainsPoint(new Point(-6, 2));
@@ -29,7 +29,7 @@ public class CheckableRectangleTest {
     }
 
     @Test
-    public void ThirdQuarterTest() throws Exception {
+    public void thirdQuarterTest() throws Exception {
         CheckableRectangle checkableRectangle = new CheckableRectangle(5, -2, -4, 4);
         boolean insidePointFlag = checkableRectangle.ContainsPoint(new Point(-1, -1));
         boolean outsidePointFlag = checkableRectangle.ContainsPoint(new Point(-6, -6));
@@ -39,7 +39,7 @@ public class CheckableRectangleTest {
     }
 
     @Test
-    public void FourthQuarterTest() throws Exception {
+    public void fourthQuarterTest() throws Exception {
         CheckableRectangle checkableRectangle = new CheckableRectangle(5, -2, -4, 4);
         boolean insidePointFlag = checkableRectangle.ContainsPoint(new Point(3, -1));
         boolean outsidePointFlag = checkableRectangle.ContainsPoint(new Point(6, -2));

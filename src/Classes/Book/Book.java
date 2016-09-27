@@ -59,9 +59,14 @@ public class Book {
 
     @Override
     public int hashCode() {
-        int result = title.hashCode();
-        result = 31 * result + author.hashCode();
-        result = 31 * result + price;
+        int result = title.hashCode() * 11;
+        result = result + author.hashCode() * 17;
+        result = result + price * 31;
         return result;
+    }
+
+    @Override
+    protected Object clone() {
+        return new Book(title, author, price, edition);
     }
 }
