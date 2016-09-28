@@ -21,7 +21,7 @@ public class BookTest {
     }
 
     @Test
-    public void isSortingCorrect(){
+    public void SortingTest(){
         ArrayList<Book> books = new ArrayList<>();
         Random random = new Random();
 
@@ -30,6 +30,7 @@ public class BookTest {
         }
 
         Collections.sort(books);
+
         Assert.assertTrue(isSorted(books));
     }
 
