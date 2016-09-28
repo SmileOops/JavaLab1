@@ -4,16 +4,16 @@ import javafx.scene.paint.Color;
 
 public class Ball {
 
-    private double weight;
+    private int weight;
     private Color color;
 
-    public Ball(double weight, Color color) {
+    public Ball(int weight, Color color) {
 
         this.weight = weight;
         this.color = color;
     }
 
-    public double getWeight() {
+    public int getWeight() {
         return weight;
     }
 

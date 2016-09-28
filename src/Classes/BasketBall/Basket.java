@@ -25,8 +25,8 @@ public class Basket {
         return result;
     }
 
-    public double getWholeWeight() {
-        double result = 0;
+    public int getWholeWeight() {
+        int result = 0;
 
         for (Ball ball: balls) {
             result += ball.getWeight();
