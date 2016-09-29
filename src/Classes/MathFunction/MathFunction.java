@@ -1,5 +1,8 @@
 package Classes.MathFunction;
 
+import java.util.Map;
+import java.util.TreeMap;
+
 public class MathFunction {
 
     private double a;
@@ -12,12 +15,15 @@ public class MathFunction {
         this.step = step;
     }
 
-    public void getResultTable () {
+    public Map<Double, Double> getResultTable () {
+        Map<Double, Double> result = new TreeMap<>();
         double i = a;
         while (i < this.b) {
-            System.out.println(i + " " + getFunctionResult(this.a));
+            result.put(i, getFunctionResult(i));
             i += this.step;
         }
+
+        return result;
     }
 
     private double getFunctionResult(double x) {
