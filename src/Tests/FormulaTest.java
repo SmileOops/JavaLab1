@@ -1,7 +1,7 @@
 package Tests;
 
-import org.junit.Assert;
 import Classes.Formula.Formula;
+import org.junit.Assert;
 
 public class FormulaTest {
     @org.junit.Test

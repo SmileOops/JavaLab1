@@ -4,8 +4,6 @@ import Classes.IncreasingSequence.Sequence;
 import org.junit.Assert;
 import org.junit.Test;
 
-import static org.junit.Assert.*;
-
 public class SequenceTest {
     @Test
     public void getUselessElementsCount() throws Exception {

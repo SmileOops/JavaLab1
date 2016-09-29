@@ -7,8 +7,6 @@ import org.junit.Test;
 import java.util.Map;
 import java.util.TreeMap;
 
-import static org.junit.Assert.*;
-
 public class MathFunctionTest {
     @Test
     public void getResultTable() throws Exception {

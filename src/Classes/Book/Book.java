@@ -15,7 +15,7 @@ public class Book implements Comparable<Book> {
         this.isbn = isbn;
     }
 
-    public static int getEdition() {
+    static int getEdition() {
         return edition;
     }
 
@@ -29,10 +29,6 @@ public class Book implements Comparable<Book> {
 
     public int getPrice() {
         return price;
-    }
-
-    public void setPrice(int price) {
-        this.price = price;
     }
 
     public String getIsbn() {
@@ -56,10 +52,7 @@ public class Book implements Comparable<Book> {
 
         Book book = (Book) o;
 
-        if (price != book.price) return false;
-        if (!title.equals(book.title)) return false;
-        if (!author.equals(book.author)) return false;
-        return edition == book.edition;
+        return price == book.price && title.equals(book.title) && author.equals(book.author) && edition == book.edition;
 
     }
 

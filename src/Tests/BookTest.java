@@ -8,8 +8,6 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Random;
 
-import static org.junit.Assert.*;
-
 public class BookTest {
 
     private boolean isSorted(ArrayList<Book> books) {
@@ -21,12 +19,12 @@ public class BookTest {
     }
 
     @Test
-    public void SortingTest(){
+    public void SortingTest() {
         ArrayList<Book> books = new ArrayList<>();
         Random random = new Random();
 
         for (int i = 0; i < 50; i++) {
-            books.add(new Book("test", "test", 1, 2, "123-23223-" + random.nextInt(1000)+ "-6"));
+            books.add(new Book("test", "test", 1, 2, "123-23223-" + random.nextInt(1000) + "-6"));
         }
 
         Collections.sort(books);

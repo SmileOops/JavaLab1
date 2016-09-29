@@ -1,12 +1,7 @@
 package Tests;
 
-import Classes.CoordinateSystem.CheckableRectangle;
 import Classes.CoordinateSystem.CoordinateSystem;
-import Classes.CoordinateSystem.Point;
-import org.junit.Assert;
 import org.junit.Test;
-
-import static org.junit.Assert.*;
 
 public class CoordinateSystemTest {
     @Test
