@@ -11,7 +11,7 @@ public class MatrixTest {
     public void getMatrix() throws Exception {
         double[] array = new double[]{1, 2, 3, 4};
         double[][] result = Matrix.GetMatrix(array);
-        double[][] expectedResult = {{1, 2, 3, 4}, 
+        double[][] expectedResult = {{1, 2, 3, 4},
                                      {2, 3, 4, 1},
                                      {3, 4, 1, 2},
                                      {4, 1, 2, 3}};

@@ -19,7 +19,7 @@ public class ComparatorsTest {
         Random random = new Random();
 
         for (int i = 0; i < 50; i++) {
-            books.add(new Book("test" + random.nextInt(10), "test" + + random.nextInt(5), random.nextInt(500), 2, "123-23223-" + random.nextInt(1000)+ "-6"));
+            books.add(new Book("test" + random.nextInt(10), "test" + +random.nextInt(5), random.nextInt(500), 2, "123-23223-" + random.nextInt(1000) + "-6"));
         }
     }
 
@@ -45,8 +45,7 @@ public class ComparatorsTest {
         for (int i = 0; i < books.size() - 1; i++) {
             if (books.get(i).getAuthor().compareTo(books.get(i + 1).getAuthor()) > 0) {
                 return false;
-            }
-            else {
+            } else {
                 if (books.get(i).getAuthor().compareTo(books.get(i + 1).getAuthor()) == 0) {
                     if (books.get(i).getTitle().compareTo(books.get(i + 1).getTitle()) > 0) {
                         return false;
@@ -62,8 +61,7 @@ public class ComparatorsTest {
         for (int i = 0; i < books.size() - 1; i++) {
             if (books.get(i).getTitle().compareTo(books.get(i + 1).getTitle()) > 0) {
                 return false;
-            }
-            else {
+            } else {
                 if (books.get(i).getTitle().compareTo(books.get(i + 1).getTitle()) == 0) {
                     if (books.get(i).getAuthor().compareTo(books.get(i + 1).getAuthor()) > 0) {
                         return false;
@@ -79,13 +77,11 @@ public class ComparatorsTest {
         for (int i = 0; i < books.size() - 1; i++) {
             if (books.get(i).getAuthor().compareTo(books.get(i + 1).getAuthor()) > 0) {
                 return false;
-            }
-            else {
+            } else {
                 if (books.get(i).getAuthor().compareTo(books.get(i + 1).getAuthor()) == 0) {
                     if (books.get(i).getTitle().compareTo(books.get(i + 1).getTitle()) > 0) {
                         return false;
-                    }
-                    else {
+                    } else {
                         if (books.get(i).getTitle().compareTo(books.get(i + 1).getTitle()) == 0) {
                             if (books.get(i).getPrice() > books.get(i + 1).getPrice()) {
                                 return false;

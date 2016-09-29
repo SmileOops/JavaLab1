@@ -1,11 +1,11 @@
 package Classes.Book;
 
 public class Book implements Comparable<Book> {
+    private static int edition;
     private String title;
     private String author;
     private String isbn;
     private int price;
-    private static int edition;
 
     public Book(String title, String author, int price, int edition, String isbn) {
         this.title = title;
@@ -13,6 +13,10 @@ public class Book implements Comparable<Book> {
         this.price = price;
         Book.edition = edition;
         this.isbn = isbn;
+    }
+
+    public static int getEdition() {
+        return edition;
     }
 
     public String getTitle() {
@@ -25,10 +29,6 @@ public class Book implements Comparable<Book> {
 
     public int getPrice() {
         return price;
-    }
-
-    public static int getEdition() {
-        return edition;
     }
 
     public void setPrice(int price) {

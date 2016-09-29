@@ -7,16 +7,16 @@ import java.util.ArrayList;
 public class Basket {
     private ArrayList<Ball> balls = new ArrayList<>();
 
-    public void addBall (Ball ball){
+    public void addBall(Ball ball) {
         if (ball != null) {
             balls.add(ball);
         }
     }
 
-    public int countBalls (Color color) {
+    public int countBalls(Color color) {
         int result = 0;
 
-        for (Ball ball: balls) {
+        for (Ball ball : balls) {
             if (ball.getColor() == color) {
                 result++;
             }
@@ -28,7 +28,7 @@ public class Basket {
     public int getWholeWeight() {
         int result = 0;
 
-        for (Ball ball: balls) {
+        for (Ball ball : balls) {
             result += ball.getWeight();
         }
 

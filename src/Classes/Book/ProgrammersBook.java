@@ -1,6 +1,6 @@
 package Classes.Book;
 
-public class ProgrammersBook extends Book{
+public class ProgrammersBook extends Book {
     private String language;
     private int level;
 

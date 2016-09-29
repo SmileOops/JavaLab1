@@ -9,8 +9,7 @@ public class SortableArray extends ArrayList<Double> {
         while (i < this.size() - 1) {
             if (this.get(i) <= this.get(i + 1)) {
                 i++;
-            }
-            else {
+            } else {
                 double temp = this.get(i);
                 this.set(i, this.get(i + 1));
                 this.set(i + 1, temp);

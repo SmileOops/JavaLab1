@@ -15,7 +15,7 @@ public class MathFunction {
         this.step = step;
     }
 
-    public Map<Double, Double> getResultTable () {
+    public Map<Double, Double> getResultTable() {
         Map<Double, Double> result = new TreeMap<>();
         double i = a;
         while (i < this.b) {

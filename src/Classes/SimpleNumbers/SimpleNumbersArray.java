@@ -7,7 +7,7 @@ public class SimpleNumbersArray extends ArrayList<Integer> {
     public ArrayList<Integer> GetSimpleNumberIndices() {
         ArrayList<Integer> result = new ArrayList<>();
         for (int i = 0; i < this.size(); i++) {
-            if (CheckIfNumberSimple(this.get(i))){
+            if (CheckIfNumberSimple(this.get(i))) {
                 result.add(i);
             }
         }
@@ -15,10 +15,10 @@ public class SimpleNumbersArray extends ArrayList<Integer> {
         return result;
     }
 
-    private boolean CheckIfNumberSimple(int number){
+    private boolean CheckIfNumberSimple(int number) {
         if (number < 2) return false;
         for (int i = 2; i < number; i++) {
-            if (number % i == 0){
+            if (number % i == 0) {
                 return false;
             }
         }

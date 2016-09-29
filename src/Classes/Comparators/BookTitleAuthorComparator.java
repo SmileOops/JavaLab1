@@ -11,8 +11,7 @@ public class BookTitleAuthorComparator implements Comparator<Book> {
         int titleComparison = new BookTitleComparator().compare(a, b);
         if (titleComparison != 0) {
             return titleComparison;
-        }
-        else {
+        } else {
             return new BookAuthorComparator().compare(a, b);
         }
     }
